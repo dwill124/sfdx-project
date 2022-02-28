@@ -16,6 +16,7 @@
   	onRecordUpdated : function(component, event) {
         console.log('onRecordUpdated');
         var sObject = component.get("v.sObject");
+	console.log('New Line');
         if (sObject) {
 	        component.set("v.title", sObject[component.get("v.titleField")]);
             component.set("v.mapMarkers", [
