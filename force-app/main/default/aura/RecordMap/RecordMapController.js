@@ -4,6 +4,7 @@
         var recordId = component.get("v.recordId");
         component.set("v.dsRecordId", recordId);
         helper.reloadRecord(component);
+        //my new comment
 	},
 
   	recordChangeHandler : function(component, event, helper) {
@@ -16,6 +17,7 @@
   	onRecordUpdated : function(component, event) {
         console.log('onRecordUpdated');
         var sObject = component.get("v.sObject");
+
 	    if (sObject) {
 	        component.set("v.title", sObject[component.get("v.titleField")]);
             component.set("v.mapMarkers", [
